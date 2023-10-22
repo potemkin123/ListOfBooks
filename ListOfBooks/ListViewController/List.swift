@@ -1,8 +1,25 @@
-//
-//  List.swift
-//  ListOfBooks
-//
-//  Created by Владислав Юрченко on 16.10.2023.
-//
-
 import Foundation
+
+struct ListResult: Decodable {
+    let results: [List]
+}
+
+struct List: Decodable {
+    let title: String
+    let description: String
+    let author: String
+    let publisher: String
+    let rankHistory: [Rank]
+    
+    private enum CodingKeys: String, CodingKey {
+        case title
+        case description
+        case author
+        case publisher
+        case rankHistory = "rank_history"
+    }
+}
+
+struct Rank: Decodable {
+    let rank: Int
+}
