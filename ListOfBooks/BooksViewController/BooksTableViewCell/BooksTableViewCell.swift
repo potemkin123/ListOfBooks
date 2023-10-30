@@ -22,8 +22,8 @@ final class BooksTableViewCell: UITableViewCell {
     }
     
     func setup(book: BookCategory) {
-        bookName.text = "Book name:"
-        bookPublishedDate.text = "Published date:"
+        bookName.text = "Book name:".localized
+        bookPublishedDate.text = "Published date:".localized
         bookNameInfo.text = book.listName
         publishedDateInfo.text = book.oldestPublishedDate
     }
