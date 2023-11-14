@@ -25,6 +25,6 @@ final class BooksTableViewCell: UITableViewCell {
         bookName.text = "Book name:".localized
         bookPublishedDate.text = "Published date:".localized
         bookNameInfo.text = book.listName
-        publishedDateInfo.text = book.oldestPublishedDate
+        publishedDateInfo.text = book.displayOldestPublishedDate()
     }
 }

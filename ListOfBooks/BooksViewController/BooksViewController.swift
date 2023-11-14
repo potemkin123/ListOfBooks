@@ -3,8 +3,6 @@ import UIKit
 final class BooksViewController: UITableViewController {
     private var viewModel: BooksViewModel
     private var books = [BookCategory]()
-    let oldestPublishedDate = Date()
-    
     
        init(viewModel: BooksViewModel) {
         self.viewModel = viewModel
@@ -31,12 +29,6 @@ final class BooksViewController: UITableViewController {
         }
     }
     
-    func dateFromApiString(_ oldestPublishedDate: String) -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM d, yyyy"
-        return dateFormatter.date(from: oldestPublishedDate)
-    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -52,18 +44,3 @@ final class BooksViewController: UITableViewController {
         return cell
     }
 }
-
-extension Date {
-    var toJustTime: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM d, yyyy"
-        return dateFormatter.string(from: self)
-    }
-    
-    var toString: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.setLocalizedDateFormatFromTemplate("MMM d, yyyy")
-        return dateFormatter.string(from: self)
-    }
-}
- 
