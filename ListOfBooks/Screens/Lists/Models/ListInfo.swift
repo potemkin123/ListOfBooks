@@ -1,9 +1,5 @@
 import Foundation
 
-struct ListResult: Decodable {
-    let results: [List]
-}
-
 struct List: Decodable {
     let title: String
     let description: String

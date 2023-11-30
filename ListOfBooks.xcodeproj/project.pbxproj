@@ -10,12 +10,13 @@
 		1C325B4B2ADDA644007593D9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C325B492ADDA644007593D9 /* ListViewController.swift */; };
 		1C325B4C2ADDA644007593D9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C325B4A2ADDA644007593D9 /* ListViewController.xib */; };
 		1C325B4E2ADDA686007593D9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C325B4D2ADDA686007593D9 /* ListViewModel.swift */; };
-		1C325B502ADDA69D007593D9 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C325B4F2ADDA69D007593D9 /* List.swift */; };
+		1C325B502ADDA69D007593D9 /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C325B4F2ADDA69D007593D9 /* ListResult.swift */; };
 		1C325B592ADEF35B007593D9 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C325B572ADEF35B007593D9 /* ListCollectionViewCell.swift */; };
 		1C325B5A2ADEF35B007593D9 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C325B582ADEF35B007593D9 /* ListCollectionViewCell.xib */; };
 		1CA4C7AE2AE68377002CB107 /* Localized string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4C7AD2AE68377002CB107 /* Localized string.swift */; };
 		1CA4C7B12AE683E1002CB107 /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4C7B02AE683E1002CB107 /* BookCategory.swift */; };
 		1CA4C7BB2AE68617002CB107 /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4C7BD2AE68617002CB107 /* Texts.strings */; };
+		1CA538522B18F2550067C2E8 /* ListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA538512B18F2550067C2E8 /* ListInfo.swift */; };
 		1CF7C8712AAE2AA90069511C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7C8702AAE2AA90069511C /* AppDelegate.swift */; };
 		1CF7C87A2AAE2AAA0069511C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF7C8792AAE2AAA0069511C /* Assets.xcassets */; };
 		1CF7C87D2AAE2AAA0069511C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF7C87B2AAE2AAA0069511C /* LaunchScreen.storyboard */; };
@@ -30,13 +31,14 @@
 		1C325B492ADDA644007593D9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1C325B4A2ADDA644007593D9 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		1C325B4D2ADDA686007593D9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		1C325B4F2ADDA69D007593D9 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		1C325B4F2ADDA69D007593D9 /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
 		1C325B572ADEF35B007593D9 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C325B582ADEF35B007593D9 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		1CA4C7AD2AE68377002CB107 /* Localized string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localized string.swift"; sourceTree = "<group>"; };
 		1CA4C7B02AE683E1002CB107 /* BookCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
 		1CA4C7BC2AE68617002CB107 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		1CA4C7BE2AE686CF002CB107 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		1CA538512B18F2550067C2E8 /* ListInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInfo.swift; sourceTree = "<group>"; };
 		1CF7C86D2AAE2AA90069511C /* ListOfBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListOfBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7C8702AAE2AA90069511C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF7C8792AAE2AAA0069511C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 				1C325B492ADDA644007593D9 /* ListViewController.swift */,
 				1C325B4A2ADDA644007593D9 /* ListViewController.xib */,
 				1C325B4D2ADDA686007593D9 /* ListViewModel.swift */,
-				1C325B4F2ADDA69D007593D9 /* List.swift */,
+				1CA538502B18F2190067C2E8 /* Models */,
 				1C325B512ADDA6A6007593D9 /* ListTableViewCell */,
 			);
 			path = Lists;
@@ -105,6 +107,15 @@
 				1C325B432ADDA588007593D9 /* Lists */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		1CA538502B18F2190067C2E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C325B4F2ADDA69D007593D9 /* ListResult.swift */,
+				1CA538512B18F2550067C2E8 /* ListInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1CF7C8642AAE2AA90069511C = {
@@ -234,9 +245,10 @@
 			files = (
 				1C325B592ADEF35B007593D9 /* ListCollectionViewCell.swift in Sources */,
 				1CF7C8AD2AAF1DDF0069511C /* BooksTableViewCell.swift in Sources */,
-				1C325B502ADDA69D007593D9 /* List.swift in Sources */,
+				1C325B502ADDA69D007593D9 /* ListResult.swift in Sources */,
 				1CA4C7AE2AE68377002CB107 /* Localized string.swift in Sources */,
 				1CF7C8A82AAF1C830069511C /* BookResult.swift in Sources */,
+				1CA538522B18F2550067C2E8 /* ListInfo.swift in Sources */,
 				1C325B4E2ADDA686007593D9 /* ListViewModel.swift in Sources */,
 				1C325B4B2ADDA644007593D9 /* ListViewController.swift in Sources */,
 				1CF7C8712AAE2AA90069511C /* AppDelegate.swift in Sources */,

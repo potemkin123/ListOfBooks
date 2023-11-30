@@ -3,8 +3,8 @@ import UIKit
 final class BooksTableViewCell: UITableViewCell {
     @IBOutlet private weak var bookPublishedDate: UILabel!
     @IBOutlet private weak var publishedDateInfo: UILabel!
-    @IBOutlet private weak var bookNameInfo: UILabel!
-    @IBOutlet private weak var bookName: UILabel!
+    @IBOutlet private weak var bookGenreInfo: UILabel!
+    @IBOutlet private weak var bookGenre: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,14 +17,10 @@ final class BooksTableViewCell: UITableViewCell {
         UINib(nibName: String(describing: BooksTableViewCell.self), bundle: nil)
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
     func setup(book: BookCategory) {
-        bookName.text = "Book genres:".localized
+        bookGenre.text = "Book genres:".localized
         bookPublishedDate.text = "Published date:".localized
-        bookNameInfo.text = book.listName
+        bookGenreInfo.text = book.listName
         publishedDateInfo.text = book.displayOldestPublishedDate()
     }
 }
