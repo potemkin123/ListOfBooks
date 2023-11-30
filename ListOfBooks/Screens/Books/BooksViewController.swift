@@ -4,7 +4,7 @@ final class BooksViewController: UITableViewController {
     private var viewModel: BooksViewModel
     private var books = [BookCategory]()
     
-       init(viewModel: BooksViewModel) {
+    init(viewModel: BooksViewModel) {
         self.viewModel = viewModel
         super.init(style: .plain)
     }
@@ -21,8 +21,7 @@ final class BooksViewController: UITableViewController {
         onRefresh()
     }
     
-    @objc func
-    onRefresh() {
+    @objc func onRefresh() {
         viewModel.onRefresh() { [ weak self ] result in
             self?.books = result
             self?.tableView.reloadData()

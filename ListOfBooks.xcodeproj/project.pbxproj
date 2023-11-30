@@ -60,7 +60,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C325B432ADDA588007593D9 /* ListViewController */ = {
+		1C325B432ADDA588007593D9 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
 				1C325B492ADDA644007593D9 /* ListViewController.swift */,
@@ -69,7 +69,7 @@
 				1C325B4F2ADDA69D007593D9 /* List.swift */,
 				1C325B512ADDA6A6007593D9 /* ListTableViewCell */,
 			);
-			path = ListViewController;
+			path = Lists;
 			sourceTree = "<group>";
 		};
 		1C325B512ADDA6A6007593D9 /* ListTableViewCell */ = {
@@ -98,6 +98,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1CA5384F2B18EE970067C2E8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7C8A02AAE2CCA0069511C /* Books */,
+				1C325B432ADDA588007593D9 /* Lists */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		1CF7C8642AAE2AA90069511C = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA4C7AC2AE6835D002CB107 /* Exstension */,
-				1CF7C8A02AAE2CCA0069511C /* BooksViewController */,
-				1C325B432ADDA588007593D9 /* ListViewController */,
+				1CA5384F2B18EE970067C2E8 /* Screens */,
 				1CF7C8702AAE2AA90069511C /* AppDelegate.swift */,
 				1CF7C8792AAE2AAA0069511C /* Assets.xcassets */,
 				1CF7C87B2AAE2AAA0069511C /* LaunchScreen.storyboard */,
@@ -129,7 +137,7 @@
 			path = ListOfBooks;
 			sourceTree = "<group>";
 		};
-		1CF7C8A02AAE2CCA0069511C /* BooksViewController */ = {
+		1CF7C8A02AAE2CCA0069511C /* Books */ = {
 			isa = PBXGroup;
 			children = (
 				1CF7C8A12AAE2CEE0069511C /* BooksViewController.swift */,
@@ -137,7 +145,7 @@
 				1CA4C7AF2AE683AF002CB107 /* Models */,
 				1CF7C8A92AAF1DA00069511C /* BooksTableViewCell */,
 			);
-			path = BooksViewController;
+			path = Books;
 			sourceTree = "<group>";
 		};
 		1CF7C8A92AAF1DA00069511C /* BooksTableViewCell */ = {
