@@ -15,15 +15,13 @@ final class BooksViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Books"
         tableView.refreshControl = UIRefreshControl()
         tableView?.refreshControl?.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         tableView.register(UINib(nibName: String(describing: BooksTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: BooksTableViewCell.self))
         onRefresh()
     }
     
-    @objc func
-    onRefresh() {
+    @objc func onRefresh() {
         viewModel.onRefresh() { [ weak self ] result in
             self?.books = result
             self?.tableView.reloadData()

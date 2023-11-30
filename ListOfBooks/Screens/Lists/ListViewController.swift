@@ -16,7 +16,6 @@ final class ListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Books"
         tableView.refreshControl = UIRefreshControl()
         tableView?.refreshControl?.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         tableView.register(UINib(nibName: String(describing: ListCollectionViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListCollectionViewCell.self))
@@ -29,7 +28,7 @@ final class ListViewController: UITableViewController {
             self?.tableView.reloadData()
         }
     }
-
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
